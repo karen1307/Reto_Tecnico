@@ -3,6 +3,10 @@ package co.com.screenplay.project.userinterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class FinalizarCompra {
+
+    private FinalizarCompra() {
+    }
+
     public static final Target FINALIZAR_COMPRA=
             Target.the("Finalizar compra").
                     locatedBy("//h1[contains(text(),'Finalizar compra')]");

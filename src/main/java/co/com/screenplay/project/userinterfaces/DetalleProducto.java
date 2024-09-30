@@ -4,6 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class DetalleProducto {
 
+    private DetalleProducto() {
+    }
+
     public static final Target CANTIDAD_PRODUCTO=
             Target.the("Cantidad de productos a añadir").
                     locatedBy("//input[@class='input-text qty text']");

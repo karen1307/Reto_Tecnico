@@ -10,7 +10,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 
 public class ClickeaSobre implements Interaction{
 
-    private Target target;
+    private final Target target;
 
     public ClickeaSobre(Target target){
         this.target = target;

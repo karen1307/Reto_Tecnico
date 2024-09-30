@@ -9,7 +9,6 @@ import net.serenitybdd.screenplay.actions.Enter;
 import static co.com.screenplay.project.userinterfaces.DetalleProducto.BOTON_AGREGAR_CARRITO;
 import static co.com.screenplay.project.userinterfaces.DetalleProducto.CANTIDAD_PRODUCTO;
 import static co.com.screenplay.project.userinterfaces.HomeSanAngel.PRODUCTO_DOS_FLORES_PRESENTE;
-import static co.com.screenplay.project.userinterfaces.HomeSanAngel.PRODUCTO_UNO_FLORES_DESTELLOS;
 
 public class SeleccionarSegundoProducto implements Task {
 

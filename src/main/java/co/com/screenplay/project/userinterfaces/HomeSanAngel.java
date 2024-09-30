@@ -4,6 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class HomeSanAngel {
 
+    private HomeSanAngel() {
+    }
+
     public static final Target PRODUCTO_UNO_FLORES_DESTELLOS =
             Target.the("Flores destellos").
                     locatedBy("(//h2[@class='woocommerce-loop-product__title' and contains(text(), 'Destellos')])[1]");

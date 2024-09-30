@@ -11,7 +11,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class AbrirWeb implements Task {
 
-    private String URL;
+    private final String URL;
 
     public AbrirWeb(String URL){
         this.URL = URL;
@@ -20,8 +20,7 @@ public class AbrirWeb implements Task {
     @Override
     @Step("{0} abrir navegador web")
     public <T extends Actor> void performAs (T actor) {
-        String pathWebURL = WEB_URL_MAP;
-        actor.attemptsTo(Open.url(pathWebURL));
+        actor.attemptsTo(Open.url(WEB_URL_MAP));
     }
 
     public static Performable navegaURL(String URL){
