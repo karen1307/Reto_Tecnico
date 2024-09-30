@@ -1,6 +1,7 @@
 package co.com.screenplay.project.stepdefinitions.hook;
 
 import co.com.screenplay.project.hook.AbrirWeb;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import net.serenitybdd.screenplay.actors.OnStage;
@@ -20,5 +21,10 @@ public class Hook {
         OnStage.theActorCalled(actor).attemptsTo(
             AbrirWeb.navegaURL(WEB_URL_MAP)
         );
+    }
+
+    @After
+    public void tearDown(){
+        OnStage.drawTheCurtain();
     }
 }
